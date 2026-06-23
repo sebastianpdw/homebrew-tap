@@ -18,17 +18,14 @@ cask "powerspaces" do
   app "Powerspaces.app"
 
   caveats <<~EOS
-    Powerspaces is not notarized, so macOS blocks the first launch. Allow it either way:
+    Powerspaces is unsigned, so macOS blocks the first launch. Clear it with one command:
 
-      Quickest (Terminal):
-        xattr -dr com.apple.quarantine "/Applications/Powerspaces.app"
-      then open Powerspaces.
+      xattr -dr com.apple.quarantine /Applications/Powerspaces.app
 
-      System Settings:
-        Try to open Powerspaces, then open System Settings > Privacy & Security,
-        scroll to Security, and click "Open Anyway" next to Powerspaces.
+    then open Powerspaces and grant Accessibility when prompted.
 
-    Then grant Accessibility when prompted.
+    No Terminal? Open Powerspaces (it gets blocked), then go to System Settings >
+    Privacy & Security > Security and click "Open Anyway".
   EOS
 
   zap trash: "~/.config/powerspaces"
