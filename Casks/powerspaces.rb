@@ -2,8 +2,7 @@ cask "powerspaces" do
   version "1.0.0"
   sha256 "57d3009a6e0b2bba4d3630b3d185f7fa759ba84373e06a21d9276f26a3545324"
 
-  url "https://github.com/sebastianpdw/powerspaces/releases/download/v#{version}/Powerspaces.app.zip",
-      verified: "github.com/sebastianpdw/powerspaces/"
+  url "https://github.com/sebastianpdw/powerspaces/releases/download/v#{version}/Powerspaces.app.zip"
   name "Powerspaces"
   desc "Per-Space dock and smart-launch for macOS Spaces"
   homepage "https://github.com/sebastianpdw/powerspaces"
