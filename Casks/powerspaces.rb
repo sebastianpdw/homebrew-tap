@@ -1,6 +1,6 @@
 cask "powerspaces" do
-  version "1.2.4"
-  sha256 "07a16f9157580f5a53855d4e39541278b87742f8d022b41d0647b156f3253c65"
+  version "1.3.0"
+  sha256 "fcda028983ca974b3f2ac06dec38237e45a5bbd58fb9fc8da028924b1c4e465d"
 
   url "https://github.com/sebastianpdw/powerspaces/releases/download/v#{version}/Powerspaces.app.zip"
   name "Powerspaces"
